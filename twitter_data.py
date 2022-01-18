@@ -31,7 +31,7 @@ def create_df_from_twitts(found_tweets):
     df_latest_data = df[(df['Date'] > start_date)]
     return df_latest_data
 
-WORDS_TO_SEARCH = ['bitcoin', 'crypto', 'cryptonews', 'cryptocurrency', 'cryptocurrencies', 'BTC']
+WORDS_TO_SEARCH = ['bitcoin', 'crypto', 'cryptonews', 'cryptocurrency', 'cryptocurrencies', 'BTC', 'bitmark', 'binance', 'bitbay', 'blockchain']
 
 all_tweets = pd.DataFrame()
 
