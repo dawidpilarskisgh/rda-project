@@ -2,6 +2,7 @@ import tweepy
 import pandas as pd
 import numpy as np
 from datetime import datetime, timedelta
+from textblob import TextBlob
 
 # Token to connect to twitter API
 API_key = ''
@@ -26,6 +27,13 @@ def create_df_from_twitts(found_tweets):
     df['Date'] = pd.to_datetime(df.Date).dt.tz_localize(None)
     df['Likes'] = np.array([tweet.favorite_count for tweet in found_tweets])
     df['RTs'] = np.array([tweet.retweet_count for tweet in found_tweets])
+    
+    #sentiment analysis
+    sentiment_objects = [TextBlob(tweet.full_text) for tweet in found_tweets]
+    sentiment_values = [[tweet.sentiment.polarity, str(tweet)] for tweet in sentiment_objects]
+    sentiment_df = pd.DataFrame(sentiment_values, columns=["polarity", "tweet"])
+    df['sentiment'] = sentiment_df['polarity']
+    
     # Filter data to last hour
     start_date = datetime.now() - timedelta(hours=2)
     df_latest_data = df[(df['Date'] > start_date)]
