@@ -113,3 +113,41 @@ Poniżej otrzymane wyniki:
 
 ###### 7
 ![image](https://user-images.githubusercontent.com/91250294/150606734-d40db16a-8440-46e5-863c-b4101f033ad8.png)
+
+
+### Eksploracja zbioru
+Porównanie zależności między zminnymi objaśniającymi (długość tweeta, liczba retweetów, liczba likoe, sentyment) a ceną bitcoina.
+
+![image](https://user-images.githubusercontent.com/91250294/150614647-61b6ed1f-09f6-45a1-b12d-34d57fa7213c.png)
+
+
+![image](https://user-images.githubusercontent.com/91250294/150614668-5ff4d792-2730-4f55-a8af-22055fbf3f10.png)
+
+
+![image](https://user-images.githubusercontent.com/91250294/150614681-4ee6d28c-3533-4d9c-b4c1-7c1c7533d6cc.png)
+
+
+![image](https://user-images.githubusercontent.com/91250294/150614697-c075e01d-ed08-44e6-ac9a-91d6ee359168.png)
+
+
+![image](https://user-images.githubusercontent.com/91250294/150614710-567add40-d8fd-4fb0-bf96-cc09769d4d13.png)
+
+
+![image](https://user-images.githubusercontent.com/91250294/150614726-cc0ba1c8-be5b-4681-9125-9e4c60bd2fc1.png)
+
+
+![image](https://user-images.githubusercontent.com/91250294/150614736-f7f69165-4ea4-415d-9890-cef986205c2e.png)
+
+
+![image](https://user-images.githubusercontent.com/91250294/150614748-7bae1083-b0ce-4b16-8293-ec063d1f2cbc.png)
+
+
+![image](https://user-images.githubusercontent.com/91250294/150614761-a407ce03-c8e6-4f10-acba-ff6505127a02.png)
+
+
+![image](https://user-images.githubusercontent.com/91250294/150614773-773a2da2-58ad-461c-9b5b-e696909e7c69.png)
+
+
+
+
+
