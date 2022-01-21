@@ -1,12 +1,11 @@
 import pandas as pd
-pd.options.mode.chained_assignment = None
 import datetime
 
 def prepare_data(stock_data, twitter_data):
-    df_stock_btc = stock_data #pd.read_csv('data/btc_data.csv')
-    df_data = twitter_data #pd.read_csv('data/all_data_bitcoin.csv')
+    df_stock_btc = stock_data 
+    df_data = twitter_data 
 
-    df_tmp = df_data[['Date', 'len', 'Likes', 'RTs', 'sentiment']]
+    df_tmp = df_data[['Date', 'len', 'Likes', 'RTs', 'sentiment_text_blob', 'Negative_nltk', 'Neutral_nltk', 'Positive_nltk']]
     df_tmp['Hours'] = df_tmp.loc[:,'Date']
     times_d = pd.to_datetime(df_tmp.Date)
     times_h = pd.to_datetime(df_tmp.Hours)  + datetime.timedelta(hours=1 )
