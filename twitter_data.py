@@ -4,6 +4,8 @@ import numpy as np
 from datetime import datetime, timedelta
 from textblob import TextBlob
 import json
+from nltk.sentiment.vader import SentimentIntensityAnalyzer
+
 
 def connect_twitter():
     with open('credentials.json', 'r') as c:
@@ -20,6 +22,8 @@ def search_twitts(api, text_to_search):
 
 
 def create_df_from_twitts(found_tweets):
+    sentiment_i_a = SentimentIntensityAnalyzer()
+
     df = pd.DataFrame(data=[tweet.full_text for tweet in found_tweets], columns=['original_Tweets'])
     df['len'] = np.array([len(tweet.full_text) for tweet in found_tweets])
     df['Date'] = np.array([tweet.created_at for tweet in found_tweets])
@@ -30,9 +34,15 @@ def create_df_from_twitts(found_tweets):
     sentiment_objects = [TextBlob(tweet.full_text) for tweet in found_tweets]
     sentiment_values = [[tweet.sentiment.polarity, str(tweet)] for tweet in sentiment_objects]
     sentiment_df = pd.DataFrame(sentiment_values, columns=["polarity", "tweet"])
-    df['sentiment'] = sentiment_df['polarity']
+    df['sentiment_text_blob'] = sentiment_df['polarity']
 
-    #Filter data to last hour
+    sentiment_nltk = [sentiment_i_a.polarity_scores(tweet.full_text) for tweet in found_tweets]
+    sentiment_nltk_df = pd.DataFrame(sentiment_nltk, columns=["neg", "neu", "pos"])
+    df['Negative_nltk'] = sentiment_nltk_df['neg']
+    df['Neutral_nltk'] = sentiment_nltk_df['neu']
+    df['Positive_nltk'] = sentiment_nltk_df['pos']
+
+    # Filter data to last hour
     start_date = datetime.now() - timedelta(hours=2)
     df_latest_data = df[(df['Date'] > start_date)]
 
@@ -47,5 +57,5 @@ def get_data_from_API(WORDS_TO_SEARCH):
         df_tweet = create_df_from_twitts(found_tweets)
         all_tweets = all_tweets.append(df_tweet, ignore_index=True)
 
-    all_tweets.to_csv('bitcoin_data_0121.csv')
+    all_tweets.to_csv('nazwa_pliku_csv')
     return all_tweets
