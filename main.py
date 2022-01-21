@@ -2,6 +2,7 @@ from twitter_data import get_data_from_API
 from btc_data import get_stock_data
 from data_preparation import prepare_data
 from prediction import predict
+from generate_raport import make_plot
 
 WORDS_TO_SEARCH = ['bitcoin', 'crypto', 'cryptonews', 'cryptocurrency', 'cryptocurrencies', 'BTC', 'bitmark', 'binance', 'bitbay', 'blockchain', 'PaidInBitcoin']
 PERIOD_BTC_STOCK = '2h'
@@ -18,3 +19,6 @@ prepared_data = prepare_data(stock_data, data_from_twitter)
 
 ## 4th - prediction
 predicted_data = predict(prepared_data.head(1))
+
+## 5th - make plot
+make_plot(predicted_data)
