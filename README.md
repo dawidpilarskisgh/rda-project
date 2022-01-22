@@ -29,7 +29,7 @@ Ograniczenia w projekcie spowodowane API tweepy:
 * jeden request do API zwraca tylko 100 losowych wyników
 
 Wykorzystane model predykcyjne: 
-* regresja linijowa,
+* regresja liniowa,
 * las losowy.
 
 Sentyment jest analizowany na dwa sposoby z wykorzystaniem  bibliotek:
@@ -52,7 +52,7 @@ Program:
 
 ### Wyniki trenowania modelu na danych historycznych (ostatnie 7 dni):
 Pobrany zbiór został podzielony na testowy oraz treninowy. 
-Wytrenowane modele ( [textblob, linijowa regresja], [textblob, las losowy], [NLTK, linijowa regresja], [NLTK, las losowy], zostały poddane ocenie na zbiorze testowy.
+Wytrenowane modele ( [textblob, liniowa regresja], [textblob, las losowy], [NLTK, liniowa regresja], [NLTK, las losowy], zostały poddane ocenie na zbiorze testowy.
 Poniżej otrzymane wyniki: 
 
 ###### Analiza sentymentu wykonana sposobem: TextBlob.
