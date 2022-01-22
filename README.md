@@ -8,7 +8,7 @@
 * Gliczyński Maciej
 * Szwalikowski Rafał
 
-## Tytuł projektu: *Analiza danych - ceny kryptowalut w czasie rzeczywistym na podstawie danych z Twittera*
+## Tytuł projektu: *Analiza danych - predykcja ceny kryptowalut w czasie rzeczywistym na podstawie danych z Twittera*
 
 ### Wstęp: 
 Projekt polega na pobieraniu danych z portalu społecznościowego Twitter, po czym posty są analizowane pod kątem sentymentu. Pobierane są rónwnież dane, takie jak: długość wpisu, liczba polubień, liczba retweetów.
