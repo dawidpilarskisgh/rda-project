@@ -147,6 +147,9 @@ Porównanie zależności między zminnymi objaśniającymi (długość tweeta, l
 
 ![image](https://user-images.githubusercontent.com/91250294/150614773-773a2da2-58ad-461c-9b5b-e696909e7c69.png)
 
+### Wnioski
+Porównanie zależności między zminnymi objaśniającymi (długość tweeta, liczba retweetów, liczba lików, sentyment) a ceną bitcoina.
+
 
 
 
