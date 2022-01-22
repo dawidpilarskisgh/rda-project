@@ -16,7 +16,7 @@ Projekt polega na pobieraniu danych z portalu społecznościowego Twitter, po cz
 Analiza odbywa się w czasie rzeczywistym, przy założeniach:
 * szukane słowa w tweetach dotyczące bitocoina: WORDS_TO_SEARCH = ['bitcoin', 'crypto', 'cryptonews', 'cryptocurrency', 'cryptocurrencies', 'BTC', 'bitmark', 'binance', 'bitbay', 'blockchain', 'PaidInBitcoin'],
 * dane z Twittera gromadzone są z ostatniej godziny, 
-* dane są analizowane, po czym wyciągana jest średnia wartość,
+* dane są analizowane, po czym wyciągana jest z nich średnia wartość,
 * predykcja cen bitcoin'a jest obrazowana na następną godzinę w odstępie 5 minutowym (ceny na jedną godzinę, co 5 minut), 
 * model predykcyjny gormadzi raz dziennie dane po czym "doucza się".
 
