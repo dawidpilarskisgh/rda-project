@@ -39,7 +39,7 @@ Sentyment jest analizowany na dwa sposoby z wykorzystaniem  bibliotek:
 ### Opis programu: 
 ![image](https://user-images.githubusercontent.com/91250294/150602503-0a14985c-dea3-480e-b5c7-c3cf36c0dc6b.png)
 
-Program podzielony na mniejsz programy, które wykonują się w odpowiedniej koljeności, zgodnie z załączonym powyżej zdjęciem.
+Program podzielony na mniejsze programy, które wykonują się w odpowiedniej koljeności, zgodnie z załączonym powyżej zdjęciem.
 
 Program:
 * twitter_data - odpowiada za ściągnięcie danych z twittera oraz analizę sentymentu,
@@ -147,9 +147,8 @@ Porównanie zależności między zminnymi objaśniającymi (długość tweeta, l
 
 ![image](https://user-images.githubusercontent.com/91250294/150614773-773a2da2-58ad-461c-9b5b-e696909e7c69.png)
 
-### Wnioski
-Porównanie zależności między zminnymi objaśniającymi (długość tweeta, liczba retweetów, liczba lików, sentyment) a ceną bitcoina.
-
+### Podsumowanie
+Program dokonuje analizy sentymentów użytkowników Twittera i na ich podstawie tworzy predykcję cen Bitcoina. Ze względu na krótkookresową prognozę cen program jest słabym narzędziem wspierającym długookresowe inwestycja, ale może mieć np. zastosowanie w przypadku dokonywania transakcji spekulacyjnych przez day-traderów. Na podstawie analizy danych historycznych w porównaniu do prognoz cen dokonanych przez wykorzystane modele lepszą mocą predykcyjną charakteryzował się model wykorzystujący regresję liniową zwłaszcza na podstawie analizy sentymentu wykonanej sposobem TextBlob.
 
 
 
