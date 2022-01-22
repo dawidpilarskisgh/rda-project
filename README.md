@@ -148,7 +148,7 @@ Porównanie zależności między zminnymi objaśniającymi (długość tweeta, l
 ![image](https://user-images.githubusercontent.com/91250294/150614773-773a2da2-58ad-461c-9b5b-e696909e7c69.png)
 
 ### Podsumowanie
-Program dokonuje analizy sentymentów użytkowników Twittera i na ich podstawie tworzy predykcję cen Bitcoina. Ze względu na krótkookresową prognozę cen program jest słabym narzędziem wspierającym długookresowe inwestycja, ale może mieć zastosowanie w przypadku dokonywania transakcji spekulacyjnych przez np. day-traderów. Na podstawie analizy danych historycznych w porównaniu do prognoz cen dokonanych przez wykorzystane modele lepszą mocą predykcyjną charakteryzował się model wykorzystujący regresję liniową zwłaszcza na podstawie analizy sentymentu wykonanej sposobem TextBlob.
+Program dokonuje analizy sentymentów użytkowników Twittera i na ich podstawie tworzy predykcję cen Bitcoina. Ze względu na krótkookresową prognozę cen program jest słabym narzędziem wspierającym długookresowe inwestycje, ale może mieć zastosowanie w przypadku dokonywania transakcji spekulacyjnych przez np. day-traderów. Na podstawie analizy danych historycznych w porównaniu do prognoz cen dokonanych przez wykorzystane modele lepszą mocą predykcyjną charakteryzował się model wykorzystujący regresję liniową zwłaszcza na podstawie analizy sentymentu wykonanej sposobem TextBlob.
 
 
 
